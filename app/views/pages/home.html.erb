@@ -1,9 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">GESLAB</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <!-- contenido del navbar-->
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- contenido de la parte derecha del navbar-->
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="jumbotron">
   <div class="container text-center">
-    <!--<%= link_to "principal", principal_path%>-->
+    <!-- contenido de la página-->
     <h1>Bienvenido a GESLAB</h1>
-    <h2>Registrate <%= link_to "aquí", "#"%></h2>
+    <h2>Inicia sesión <%= link_to "aquí", principal_path%></h2>
+
+
   </div>
 </div>
 </body>
+</html>
