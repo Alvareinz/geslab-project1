@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>INICIO</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -14,7 +14,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand">GESLAB</a>
+      <a class="navbar-brand"><!--<img src="images/jigsaw.png" alt="" class="img-rounded">--></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -22,6 +22,8 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <!-- contenido de la parte derecha del navbar-->
+          <li><%= link_to "iniciar sesión", principal_path %></li>
+        </ul>
       </ul>
     </div>
   </div>
@@ -31,8 +33,6 @@
     <!-- contenido de la página-->
     <h1>Bienvenido a GESLAB</h1>
     <h2>Inicia sesión <%= link_to "aquí", principal_path%></h2>
-
-
   </div>
 </div>
 </body>
