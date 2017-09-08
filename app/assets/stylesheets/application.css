@@ -24,3 +24,20 @@
   position: relative;
   top: 40%;
 }
+
+.navbar {
+  height: 89px;
+}
+
+.navbar-collapse {
+  text-align:center;
+  padding-top: 15px;
+}
+.navbar-nav {
+    display:inline-block;
+    float:none;
+}
+
+a{
+  font-size: 18px;
+}

@@ -14,7 +14,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand">GESLAB</a>
+      <a class="navbar-brand"><%= image_tag "jigsaw.png", alt: "jigsaw" %></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -30,16 +30,30 @@
           </ul>
         </li>
       </ul>
+
       <ul class="nav navbar-nav">
         <li role="presentation" class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-            Ingreso de componentes
+            Gestor de componentes
           <span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
-            <li><%= link_to "Ingreso de hardware", ingreso_hardware_path%></li>
-            <li><%= link_to "Laboratorio", laboratorio_path%></li>
-            <li><%= link_to "Gestión de hardware", gestion_hardware_path%></li>
+            <li><%= link_to "Ingresar hardware", ingresar_hardware_path%></li>
+            <li><%= link_to "Modificar hardware", modificar_hardware_path%></li>
+            <li><%= link_to "Eliminar hardware", eliminar_hardware_path%></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav">
+        <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Laboratorio
+          <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "Ingresar hardware a reparar", ingreso_hardware_reparar_path%></li>
+            <li><%= link_to "Gestor de reparación", gestor_reparacion_path%></li>
           </ul>
         </li>
       </ul>

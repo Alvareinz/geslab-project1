@@ -1,17 +1,25 @@
 Rails.application.routes.draw do
   #get 'pages/home'
   root 'pages#home'
-  #get de las demas páginas web del sistema.
+
+  #get de la página principal para el acceso a los módulos.
   get 'principal' => 'pages#principal'
-  #get para la gestión de usuarios.
+
+  #get para el módulo gestión de usuarios.
   get 'nuevo_usuario' => 'gestion_usuario#nuevo_usuario'
   get 'eliminar_usuario' => 'gestion_usuario#eliminar_usuario'
   get 'modificar_usuario' => 'gestion_usuario#modificar_usuario'
-  #get para el ingreso de componentes
-  get 'ingreso_hardware' => 'ingreso_componentes#ingreso_hardware'
-  get 'laboratorio' => 'ingreso_componentes#laboratorio'
-  get 'gestion_hardware' => 'ingreso_componentes#gestion_hardware'
-  #get para la reportabilidad
+
+  #get para el módulo gestor de componentes
+  get 'ingresar_hardware' => 'gestor_componente#ingresar_hardware'
+  get 'modificar_hardware' => 'gestor_componente#modificar_hardware'
+  get 'eliminar_hardware' => 'gestor_componente#eliminar_hardware'
+
+  #get para el módulo de laboratorio
+  get 'ingreso_hardware_reparar' => 'laboratorio#ingreso_hardware_reparar'
+  get 'gestor_reparacion' => 'laboratorio#gestor_reparacion'
+
+  #get para el módulo de reportabilidad
   get 'hardware' => 'reportabilidad#hardware'
   get 'instalacion' => 'reportabilidad#instalacion'
   get 'reparacion' => 'reportabilidad#reparacion'
