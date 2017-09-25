@@ -7,13 +7,11 @@ Rails.application.routes.draw do
 
   #get para el módulo gestión de usuarios.
   get 'nuevo_usuario' => 'gestion_usuario#nuevo_usuario'
-  get 'eliminar_usuario' => 'gestion_usuario#eliminar_usuario'
   get 'modificar_usuario' => 'gestion_usuario#modificar_usuario'
 
   #get para el módulo gestor de componentes
   get 'ingresar_hardware' => 'gestor_componente#ingresar_hardware'
   get 'modificar_hardware' => 'gestor_componente#modificar_hardware'
-  get 'eliminar_hardware' => 'gestor_componente#eliminar_hardware'
 
   #get para el módulo de laboratorio
   get 'ingreso_hardware_reparar' => 'laboratorio#ingreso_hardware_reparar'
